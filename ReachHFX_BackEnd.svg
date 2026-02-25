@@ -1,0 +1,327 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1177pt" height="816pt" viewBox="0.00 0.00 1177.00 816.00">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 812)">
+<title>BackendArchitecture</title>
+<polygon fill="white" stroke="none" points="-4,4 -4,-812 1172.76,-812 1172.76,4 -4,4"/>
+<g id="clust1" class="cluster">
+<title>cluster_backend_service</title>
+<polygon fill="none" stroke="#f28e2b" points="226.9,-152 226.9,-800 1160.76,-800 1160.76,-152 226.9,-152"/>
+<text xml:space="preserve" text-anchor="middle" x="693.83" y="-783.4" font-family="Helvetica,sans-Serif" font-size="14.00">Backend API Service (Node/Express)</text>
+</g>
+<g id="clust2" class="cluster">
+<title>cluster_backend_routes</title>
+<polygon fill="none" stroke="#f5c08b" points="234.9,-160 234.9,-723 427.48,-723 427.48,-160 234.9,-160"/>
+<text xml:space="preserve" text-anchor="middle" x="331.19" y="-706.4" font-family="Helvetica,sans-Serif" font-size="14.00">HTTP Routes (REST JSON)</text>
+</g>
+<g id="clust3" class="cluster">
+<title>cluster_backend_services</title>
+<polygon fill="none" stroke="#f5c08b" points="512.26,-214 512.26,-561 789.72,-561 789.72,-214 512.26,-214"/>
+<text xml:space="preserve" text-anchor="middle" x="650.99" y="-544.4" font-family="Helvetica,sans-Serif" font-size="14.00">Service Layer (recommended boundaries)</text>
+</g>
+<g id="clust4" class="cluster">
+<title>cluster_backend_adapters</title>
+<polygon fill="none" stroke="#f5c08b" points="818.72,-214 818.72,-453 958.55,-453 958.55,-214 818.72,-214"/>
+<text xml:space="preserve" text-anchor="middle" x="888.63" y="-436.4" font-family="Helvetica,sans-Serif" font-size="14.00">Adapters / Clients</text>
+</g>
+<g id="clust5" class="cluster">
+<title>cluster_backend_data</title>
+<polygon fill="none" stroke="#f5c08b" points="979.55,-376 979.55,-453 1152.76,-453 1152.76,-376 979.55,-376"/>
+<text xml:space="preserve" text-anchor="middle" x="1066.15" y="-436.4" font-family="Helvetica,sans-Serif" font-size="14.00">Local Data</text>
+</g>
+<!-- Mobile App (Frontend) -->
+<g id="node1" class="node">
+<title>Mobile App (Frontend)</title>
+<ellipse fill="#e8f0fe" stroke="black" cx="69.45" cy="-749" rx="69.45" ry="18"/>
+<text xml:space="preserve" text-anchor="middle" x="69.45" y="-746" font-family="Helvetica,sans-Serif" font-size="10.00">Mobile App (Frontend)</text>
+</g>
+<!-- backend/server.js -->
+<g id="node2" class="node">
+<title>backend/server.js</title>
+<polygon fill="#fdebd2" stroke="black" points="377.87,-767 283.5,-767 283.5,-731 377.87,-731 377.87,-767"/>
+<text xml:space="preserve" text-anchor="middle" x="330.69" y="-746" font-family="Helvetica,sans-Serif" font-size="10.00">backend/server.js</text>
+</g>
+<!-- Mobile App (Frontend)&#45;&gt;backend/server.js -->
+<g id="edge1" class="edge">
+<title>Mobile App (Frontend)-&gt;backend/server.js</title>
+<path fill="none" stroke="black" d="M139.24,-749C180.52,-749 232.44,-749 271.64,-749"/>
+<polygon fill="black" stroke="black" points="271.6,-752.5 281.6,-749 271.6,-745.5 271.6,-752.5"/>
+<text xml:space="preserve" text-anchor="middle" x="187.9" y="-751.7" font-family="Helvetica,sans-Serif" font-size="9.00">REST (HTTPS)</text>
+</g>
+<!-- Config: loadEnv.js -->
+<g id="node3" class="node">
+<title>Config: loadEnv.js</title>
+<polygon fill="#f1f3f4" stroke="black" points="698.79,-767 602.19,-767 602.19,-731 698.79,-731 698.79,-767"/>
+<text xml:space="preserve" text-anchor="middle" x="650.49" y="-746" font-family="Helvetica,sans-Serif" font-size="10.00">Config: loadEnv.js</text>
+</g>
+<!-- backend/server.js&#45;&gt;Config: loadEnv.js -->
+<g id="edge2" class="edge">
+<title>backend/server.js-&gt;Config: loadEnv.js</title>
+<path fill="none" stroke="black" d="M378.24,-749C434.44,-749 529.04,-749 590.35,-749"/>
+<polygon fill="black" stroke="black" points="590.26,-752.5 600.26,-749 590.26,-745.5 590.26,-752.5"/>
+<text xml:space="preserve" text-anchor="middle" x="469.87" y="-751.7" font-family="Helvetica,sans-Serif" font-size="9.00">env + config</text>
+</g>
+<!-- /realtime/vehicles -->
+<g id="node4" class="node">
+<title>/realtime/vehicles</title>
+<path fill="none" stroke="black" d="M365.31,-258C365.31,-258 296.06,-258 296.06,-258 290.06,-258 284.06,-252 284.06,-246 284.06,-246 284.06,-234 284.06,-234 284.06,-228 290.06,-222 296.06,-222 296.06,-222 365.31,-222 365.31,-222 371.31,-222 377.31,-228 377.31,-234 377.31,-234 377.31,-246 377.31,-246 377.31,-252 371.31,-258 365.31,-258"/>
+<text xml:space="preserve" text-anchor="middle" x="330.69" y="-237" font-family="Helvetica,sans-Serif" font-size="10.00">/realtime/vehicles</text>
+</g>
+<!-- GtfsRealtimeService -->
+<g id="node14" class="node">
+<title>GtfsRealtimeService</title>
+<path fill="none" stroke="black" d="M692.06,-258C692.06,-258 608.92,-258 608.92,-258 602.92,-258 596.92,-252 596.92,-246 596.92,-246 596.92,-234 596.92,-234 596.92,-228 602.92,-222 608.92,-222 608.92,-222 692.06,-222 692.06,-222 698.06,-222 704.06,-228 704.06,-234 704.06,-234 704.06,-246 704.06,-246 704.06,-252 698.06,-258 692.06,-258"/>
+<text xml:space="preserve" text-anchor="middle" x="650.49" y="-237" font-family="Helvetica,sans-Serif" font-size="10.00">GtfsRealtimeService</text>
+</g>
+<!-- /realtime/vehicles&#45;&gt;GtfsRealtimeService -->
+<g id="edge3" class="edge">
+<title>/realtime/vehicles-&gt;GtfsRealtimeService</title>
+<path fill="none" stroke="black" d="M377.56,-240C432.17,-240 523.72,-240 585.34,-240"/>
+<polygon fill="black" stroke="black" points="584.96,-243.5 594.96,-240 584.96,-236.5 584.96,-243.5"/>
+</g>
+<!-- /realtime/arrivals -->
+<g id="node5" class="node">
+<title>/realtime/arrivals</title>
+<path fill="none" stroke="black" d="M363.36,-204C363.36,-204 298.01,-204 298.01,-204 292.01,-204 286.01,-198 286.01,-192 286.01,-192 286.01,-180 286.01,-180 286.01,-174 292.01,-168 298.01,-168 298.01,-168 363.36,-168 363.36,-168 369.36,-168 375.36,-174 375.36,-180 375.36,-180 375.36,-192 375.36,-192 375.36,-198 369.36,-204 363.36,-204"/>
+<text xml:space="preserve" text-anchor="middle" x="330.69" y="-183" font-family="Helvetica,sans-Serif" font-size="10.00">/realtime/arrivals</text>
+</g>
+<!-- /realtime/arrivals&#45;&gt;GtfsRealtimeService -->
+<g id="edge4" class="edge">
+<title>/realtime/arrivals-&gt;GtfsRealtimeService</title>
+<path fill="none" stroke="black" d="M375.54,-193.45C429.88,-202.69 522.92,-218.49 585.29,-229.09"/>
+<polygon fill="black" stroke="black" points="584.63,-232.53 595.08,-230.75 585.8,-225.63 584.63,-232.53"/>
+</g>
+<!-- /static/routes -->
+<g id="node6" class="node">
+<title>/static/routes</title>
+<path fill="none" stroke="black" d="M355.03,-528C355.03,-528 306.34,-528 306.34,-528 300.34,-528 294.34,-522 294.34,-516 294.34,-516 294.34,-504 294.34,-504 294.34,-498 300.34,-492 306.34,-492 306.34,-492 355.03,-492 355.03,-492 361.03,-492 367.03,-498 367.03,-504 367.03,-504 367.03,-516 367.03,-516 367.03,-522 361.03,-528 355.03,-528"/>
+<text xml:space="preserve" text-anchor="middle" x="330.69" y="-507" font-family="Helvetica,sans-Serif" font-size="10.00">/static/routes</text>
+</g>
+<!-- GtfsStaticService -->
+<g id="node15" class="node">
+<title>GtfsStaticService</title>
+<path fill="none" stroke="black" d="M684.84,-474C684.84,-474 616.15,-474 616.15,-474 610.15,-474 604.15,-468 604.15,-462 604.15,-462 604.15,-450 604.15,-450 604.15,-444 610.15,-438 616.15,-438 616.15,-438 684.84,-438 684.84,-438 690.84,-438 696.84,-444 696.84,-450 696.84,-450 696.84,-462 696.84,-462 696.84,-468 690.84,-474 684.84,-474"/>
+<text xml:space="preserve" text-anchor="middle" x="650.49" y="-453" font-family="Helvetica,sans-Serif" font-size="10.00">GtfsStaticService</text>
+</g>
+<!-- /static/routes&#45;&gt;GtfsStaticService -->
+<g id="edge5" class="edge">
+<title>/static/routes-&gt;GtfsStaticService</title>
+<path fill="none" stroke="black" d="M367.53,-503.91C422.27,-494.61 527.23,-476.77 592.51,-465.68"/>
+<polygon fill="black" stroke="black" points="593.05,-469.14 602.32,-464.01 591.88,-462.24 593.05,-469.14"/>
+</g>
+<!-- /static/stops -->
+<g id="node7" class="node">
+<title>/static/stops</title>
+<path fill="none" stroke="black" d="M353.09,-582C353.09,-582 308.29,-582 308.29,-582 302.29,-582 296.29,-576 296.29,-570 296.29,-570 296.29,-558 296.29,-558 296.29,-552 302.29,-546 308.29,-546 308.29,-546 353.09,-546 353.09,-546 359.09,-546 365.09,-552 365.09,-558 365.09,-558 365.09,-570 365.09,-570 365.09,-576 359.09,-582 353.09,-582"/>
+<text xml:space="preserve" text-anchor="middle" x="330.69" y="-561" font-family="Helvetica,sans-Serif" font-size="10.00">/static/stops</text>
+</g>
+<!-- /static/stops&#45;&gt;GtfsStaticService -->
+<g id="edge6" class="edge">
+<title>/static/stops-&gt;GtfsStaticService</title>
+<path fill="none" stroke="black" d="M365.33,-557.07C384.09,-552.58 407.61,-545.9 427.48,-537 468.25,-518.75 470.78,-499.6 512.26,-483 537.67,-472.83 567.32,-466.38 592.54,-462.35"/>
+<polygon fill="black" stroke="black" points="592.92,-465.83 602.28,-460.88 591.88,-458.91 592.92,-465.83"/>
+</g>
+<!-- /static/shapes -->
+<g id="node8" class="node">
+<title>/static/shapes</title>
+<path fill="none" stroke="black" d="M357.26,-636C357.26,-636 304.12,-636 304.12,-636 298.12,-636 292.12,-630 292.12,-624 292.12,-624 292.12,-612 292.12,-612 292.12,-606 298.12,-600 304.12,-600 304.12,-600 357.26,-600 357.26,-600 363.26,-600 369.26,-606 369.26,-612 369.26,-612 369.26,-624 369.26,-624 369.26,-630 363.26,-636 357.26,-636"/>
+<text xml:space="preserve" text-anchor="middle" x="330.69" y="-615" font-family="Helvetica,sans-Serif" font-size="10.00">/static/shapes</text>
+</g>
+<!-- /static/shapes&#45;&gt;GtfsStaticService -->
+<g id="edge7" class="edge">
+<title>/static/shapes-&gt;GtfsStaticService</title>
+<path fill="none" stroke="black" d="M369.35,-614.94C388.64,-611.65 411.38,-604.87 427.48,-591 442.24,-578.27 433.23,-566.17 445.48,-551 462.4,-530.03 476.42,-535.19 494.26,-515 505.07,-502.77 499.04,-492.57 512.26,-483 535.22,-466.39 565.78,-459.31 592.22,-456.53"/>
+<polygon fill="black" stroke="black" points="592.48,-460.02 602.15,-455.68 591.89,-453.04 592.48,-460.02"/>
+</g>
+<!-- /trip/itinerary -->
+<g id="node9" class="node">
+<title>/trip/itinerary</title>
+<path fill="none" stroke="black" d="M354.19,-474C354.19,-474 307.18,-474 307.18,-474 301.18,-474 295.18,-468 295.18,-462 295.18,-462 295.18,-450 295.18,-450 295.18,-444 301.18,-438 307.18,-438 307.18,-438 354.19,-438 354.19,-438 360.19,-438 366.19,-444 366.19,-450 366.19,-450 366.19,-462 366.19,-462 366.19,-468 360.19,-474 354.19,-474"/>
+<text xml:space="preserve" text-anchor="middle" x="330.69" y="-453" font-family="Helvetica,sans-Serif" font-size="10.00">/trip/itinerary</text>
+</g>
+<!-- TripPlanningService -->
+<g id="node16" class="node">
+<title>TripPlanningService</title>
+<path fill="none" stroke="black" d="M691.23,-420C691.23,-420 609.75,-420 609.75,-420 603.75,-420 597.75,-414 597.75,-408 597.75,-408 597.75,-396 597.75,-396 597.75,-390 603.75,-384 609.75,-384 609.75,-384 691.23,-384 691.23,-384 697.23,-384 703.23,-390 703.23,-396 703.23,-396 703.23,-408 703.23,-408 703.23,-414 697.23,-420 691.23,-420"/>
+<text xml:space="preserve" text-anchor="middle" x="650.49" y="-399" font-family="Helvetica,sans-Serif" font-size="10.00">TripPlanningService</text>
+</g>
+<!-- /trip/itinerary&#45;&gt;TripPlanningService -->
+<g id="edge8" class="edge">
+<title>/trip/itinerary-&gt;TripPlanningService</title>
+<path fill="none" stroke="black" d="M366.61,-450.07C419.42,-441.09 520.44,-423.93 586.37,-412.73"/>
+<polygon fill="black" stroke="black" points="586.68,-416.22 595.95,-411.1 585.5,-409.32 586.68,-416.22"/>
+</g>
+<!-- /places/autocomplete -->
+<g id="node10" class="node">
+<title>/places/autocomplete</title>
+<path fill="none" stroke="black" d="M373.94,-366C373.94,-366 287.44,-366 287.44,-366 281.44,-366 275.44,-360 275.44,-354 275.44,-354 275.44,-342 275.44,-342 275.44,-336 281.44,-330 287.44,-330 287.44,-330 373.94,-330 373.94,-330 379.94,-330 385.94,-336 385.94,-342 385.94,-342 385.94,-354 385.94,-354 385.94,-360 379.94,-366 373.94,-366"/>
+<text xml:space="preserve" text-anchor="middle" x="330.69" y="-345" font-family="Helvetica,sans-Serif" font-size="10.00">/places/autocomplete</text>
+</g>
+<!-- PlacesService -->
+<g id="node17" class="node">
+<title>PlacesService</title>
+<path fill="none" stroke="black" d="M678.17,-366C678.17,-366 622.81,-366 622.81,-366 616.81,-366 610.81,-360 610.81,-354 610.81,-354 610.81,-342 610.81,-342 610.81,-336 616.81,-330 622.81,-330 622.81,-330 678.17,-330 678.17,-330 684.17,-330 690.17,-336 690.17,-342 690.17,-342 690.17,-354 690.17,-354 690.17,-360 684.17,-366 678.17,-366"/>
+<text xml:space="preserve" text-anchor="middle" x="650.49" y="-345" font-family="Helvetica,sans-Serif" font-size="10.00">PlacesService</text>
+</g>
+<!-- /places/autocomplete&#45;&gt;PlacesService -->
+<g id="edge9" class="edge">
+<title>/places/autocomplete-&gt;PlacesService</title>
+<path fill="none" stroke="black" d="M386.32,-348C446.09,-348 541.1,-348 599.13,-348"/>
+<polygon fill="black" stroke="black" points="599.06,-351.5 609.06,-348 599.06,-344.5 599.06,-351.5"/>
+</g>
+<!-- /places/details -->
+<g id="node11" class="node">
+<title>/places/details</title>
+<path fill="none" stroke="black" d="M358.37,-420C358.37,-420 303,-420 303,-420 297,-420 291,-414 291,-408 291,-408 291,-396 291,-396 291,-390 297,-384 303,-384 303,-384 358.37,-384 358.37,-384 364.37,-384 370.37,-390 370.37,-396 370.37,-396 370.37,-408 370.37,-408 370.37,-414 364.37,-420 358.37,-420"/>
+<text xml:space="preserve" text-anchor="middle" x="330.69" y="-399" font-family="Helvetica,sans-Serif" font-size="10.00">/places/details</text>
+</g>
+<!-- /places/details&#45;&gt;PlacesService -->
+<g id="edge10" class="edge">
+<title>/places/details-&gt;PlacesService</title>
+<path fill="none" stroke="black" d="M370.66,-395.38C428.23,-385.6 536.04,-367.28 599.41,-356.51"/>
+<polygon fill="black" stroke="black" points="599.94,-359.97 609.21,-354.84 598.76,-353.07 599.94,-359.97"/>
+</g>
+<!-- /directions/walking -->
+<g id="node12" class="node">
+<title>/directions/walking</title>
+<path fill="none" stroke="black" d="M367.54,-312C367.54,-312 293.84,-312 293.84,-312 287.84,-312 281.84,-306 281.84,-300 281.84,-300 281.84,-288 281.84,-288 281.84,-282 287.84,-276 293.84,-276 293.84,-276 367.54,-276 367.54,-276 373.54,-276 379.54,-282 379.54,-288 379.54,-288 379.54,-300 379.54,-300 379.54,-306 373.54,-312 367.54,-312"/>
+<text xml:space="preserve" text-anchor="middle" x="330.69" y="-291" font-family="Helvetica,sans-Serif" font-size="10.00">/directions/walking</text>
+</g>
+<!-- DirectionsService -->
+<g id="node18" class="node">
+<title>DirectionsService</title>
+<path fill="none" stroke="black" d="M685.39,-312C685.39,-312 615.59,-312 615.59,-312 609.59,-312 603.59,-306 603.59,-300 603.59,-300 603.59,-288 603.59,-288 603.59,-282 609.59,-276 615.59,-276 615.59,-276 685.39,-276 685.39,-276 691.39,-276 697.39,-282 697.39,-288 697.39,-288 697.39,-300 697.39,-300 697.39,-306 691.39,-312 685.39,-312"/>
+<text xml:space="preserve" text-anchor="middle" x="650.49" y="-291" font-family="Helvetica,sans-Serif" font-size="10.00">DirectionsService</text>
+</g>
+<!-- /directions/walking&#45;&gt;DirectionsService -->
+<g id="edge11" class="edge">
+<title>/directions/walking-&gt;DirectionsService</title>
+<path fill="none" stroke="black" d="M379.95,-294C436.8,-294 531.16,-294 591.81,-294"/>
+<polygon fill="black" stroke="black" points="591.59,-297.5 601.59,-294 591.59,-290.5 591.59,-297.5"/>
+</g>
+<!-- /status -->
+<g id="node13" class="node">
+<title>/status</title>
+<path fill="none" stroke="black" d="M345.69,-690C345.69,-690 315.69,-690 315.69,-690 309.69,-690 303.69,-684 303.69,-678 303.69,-678 303.69,-666 303.69,-666 303.69,-660 309.69,-654 315.69,-654 315.69,-654 345.69,-654 345.69,-654 351.69,-654 357.69,-660 357.69,-666 357.69,-666 357.69,-678 357.69,-678 357.69,-684 351.69,-690 345.69,-690"/>
+<text xml:space="preserve" text-anchor="middle" x="330.69" y="-669" font-family="Helvetica,sans-Serif" font-size="10.00">/status</text>
+</g>
+<!-- StatusService -->
+<g id="node19" class="node">
+<title>StatusService</title>
+<path fill="none" stroke="black" d="M677.34,-528C677.34,-528 623.64,-528 623.64,-528 617.64,-528 611.64,-522 611.64,-516 611.64,-516 611.64,-504 611.64,-504 611.64,-498 617.64,-492 623.64,-492 623.64,-492 677.34,-492 677.34,-492 683.34,-492 689.34,-498 689.34,-504 689.34,-504 689.34,-516 689.34,-516 689.34,-522 683.34,-528 677.34,-528"/>
+<text xml:space="preserve" text-anchor="middle" x="650.49" y="-507" font-family="Helvetica,sans-Serif" font-size="10.00">StatusService</text>
+</g>
+<!-- /status&#45;&gt;StatusService -->
+<g id="edge12" class="edge">
+<title>/status-&gt;StatusService</title>
+<path fill="none" stroke="black" d="M357.8,-671.7C379.51,-670 409.62,-664.03 427.48,-645 453.6,-617.16 421.29,-590.54 445.48,-561 450.6,-554.74 504.5,-534.27 512.26,-532 540.81,-523.66 573.68,-518.25 600.09,-514.88"/>
+<polygon fill="black" stroke="black" points="600.35,-518.38 609.86,-513.7 599.51,-511.43 600.35,-518.38"/>
+</g>
+<!-- GTFS&#45;RT Client -->
+<g id="node20" class="node">
+<title>GTFS-RT Client</title>
+<path fill="none" stroke="black" d="M920.47,-258C920.47,-258 856.8,-258 856.8,-258 850.8,-258 844.8,-252 844.8,-246 844.8,-246 844.8,-234 844.8,-234 844.8,-228 850.8,-222 856.8,-222 856.8,-222 920.47,-222 920.47,-222 926.47,-222 932.47,-228 932.47,-234 932.47,-234 932.47,-246 932.47,-246 932.47,-252 926.47,-258 920.47,-258"/>
+<text xml:space="preserve" text-anchor="middle" x="888.63" y="-237" font-family="Helvetica,sans-Serif" font-size="10.00">GTFS-RT Client</text>
+</g>
+<!-- GtfsRealtimeService&#45;&gt;GTFS&#45;RT Client -->
+<g id="edge13" class="edge">
+<title>GtfsRealtimeService-&gt;GTFS-RT Client</title>
+<path fill="none" stroke="black" d="M704.49,-240C742.98,-240 794.89,-240 833.61,-240"/>
+<polygon fill="black" stroke="black" points="833.16,-243.5 843.16,-240 833.16,-236.5 833.16,-243.5"/>
+</g>
+<!-- GTFS Static Reader -->
+<g id="node21" class="node">
+<title>GTFS Static Reader</title>
+<path fill="none" stroke="black" d="M929.65,-420C929.65,-420 847.62,-420 847.62,-420 841.62,-420 835.62,-414 835.62,-408 835.62,-408 835.62,-396 835.62,-396 835.62,-390 841.62,-384 847.62,-384 847.62,-384 929.65,-384 929.65,-384 935.65,-384 941.65,-390 941.65,-396 941.65,-396 941.65,-408 941.65,-408 941.65,-414 935.65,-420 929.65,-420"/>
+<text xml:space="preserve" text-anchor="middle" x="888.63" y="-399" font-family="Helvetica,sans-Serif" font-size="10.00">GTFS Static Reader</text>
+</g>
+<!-- GtfsStaticService&#45;&gt;GTFS Static Reader -->
+<g id="edge14" class="edge">
+<title>GtfsStaticService-&gt;GTFS Static Reader</title>
+<path fill="none" stroke="black" d="M697.13,-447.99C724.16,-443.02 759.02,-436.22 789.72,-429 800.97,-426.35 812.88,-423.29 824.37,-420.2"/>
+<polygon fill="black" stroke="black" points="825.04,-423.65 833.77,-417.64 823.2,-416.89 825.04,-423.65"/>
+</g>
+<!-- TripPlanningService&#45;&gt;GTFS Static Reader -->
+<g id="edge15" class="edge">
+<title>TripPlanningService-&gt;GTFS Static Reader</title>
+<path fill="none" stroke="black" d="M703.61,-402C739.06,-402 786.19,-402 823.88,-402"/>
+<polygon fill="black" stroke="black" points="823.73,-405.5 833.73,-402 823.73,-398.5 823.73,-405.5"/>
+</g>
+<!-- Google Directions Client -->
+<g id="node23" class="node">
+<title>Google Directions Client</title>
+<path fill="none" stroke="black" d="M938.55,-312C938.55,-312 838.72,-312 838.72,-312 832.72,-312 826.72,-306 826.72,-300 826.72,-300 826.72,-288 826.72,-288 826.72,-282 832.72,-276 838.72,-276 838.72,-276 938.55,-276 938.55,-276 944.55,-276 950.55,-282 950.55,-288 950.55,-288 950.55,-300 950.55,-300 950.55,-306 944.55,-312 938.55,-312"/>
+<text xml:space="preserve" text-anchor="middle" x="888.63" y="-291" font-family="Helvetica,sans-Serif" font-size="10.00">Google Directions Client</text>
+</g>
+<!-- TripPlanningService&#45;&gt;Google Directions Client -->
+<g id="edge16" class="edge">
+<title>TripPlanningService-&gt;Google Directions Client</title>
+<path fill="none" stroke="black" d="M703.71,-402.28C731.59,-400 765.12,-393.14 789.72,-375 811.65,-358.83 798.34,-339.08 818.72,-321 819.63,-320.19 820.57,-319.4 821.54,-318.64"/>
+<polygon fill="black" stroke="black" points="823.23,-321.72 829.52,-313.19 819.29,-315.94 823.23,-321.72"/>
+</g>
+<!-- Google Places Client -->
+<g id="node22" class="node">
+<title>Google Places Client</title>
+<path fill="none" stroke="black" d="M931.33,-366C931.33,-366 845.94,-366 845.94,-366 839.94,-366 833.94,-360 833.94,-354 833.94,-354 833.94,-342 833.94,-342 833.94,-336 839.94,-330 845.94,-330 845.94,-330 931.33,-330 931.33,-330 937.33,-330 943.33,-336 943.33,-342 943.33,-342 943.33,-354 943.33,-354 943.33,-360 937.33,-366 931.33,-366"/>
+<text xml:space="preserve" text-anchor="middle" x="888.63" y="-345" font-family="Helvetica,sans-Serif" font-size="10.00">Google Places Client</text>
+</g>
+<!-- PlacesService&#45;&gt;Google Places Client -->
+<g id="edge17" class="edge">
+<title>PlacesService-&gt;Google Places Client</title>
+<path fill="none" stroke="black" d="M690.49,-348C726.24,-348 779.91,-348 822.23,-348"/>
+<polygon fill="black" stroke="black" points="822.05,-351.5 832.05,-348 822.05,-344.5 822.05,-351.5"/>
+</g>
+<!-- DirectionsService&#45;&gt;Google Directions Client -->
+<g id="edge18" class="edge">
+<title>DirectionsService-&gt;Google Directions Client</title>
+<path fill="none" stroke="black" d="M697.86,-294C731.36,-294 777.25,-294 815.51,-294"/>
+<polygon fill="black" stroke="black" points="815.08,-297.5 825.08,-294 815.08,-290.5 815.08,-297.5"/>
+</g>
+<!-- GTFS Realtime Feeds -->
+<g id="node25" class="node">
+<title>GTFS Realtime Feeds</title>
+<ellipse fill="#e7f5e7" stroke="black" cx="1066.15" cy="-18" rx="69.44" ry="18"/>
+<text xml:space="preserve" text-anchor="middle" x="1066.15" y="-15" font-family="Helvetica,sans-Serif" font-size="10.00">GTFS Realtime Feeds</text>
+</g>
+<!-- GTFS&#45;RT Client&#45;&gt;GTFS Realtime Feeds -->
+<g id="edge19" class="edge">
+<title>GTFS-RT Client-&gt;GTFS Realtime Feeds</title>
+<path fill="none" stroke="black" d="M891.79,-221.72C897.61,-181.61 917.63,-86.19 979.55,-45 986.33,-40.49 993.91,-36.7 1001.67,-33.51"/>
+<polygon fill="black" stroke="black" points="1002.76,-36.84 1010.91,-30.07 1000.32,-30.28 1002.76,-36.84"/>
+</g>
+<!-- backend/data/google_transit.zip -->
+<g id="node24" class="node">
+<title>backend/data/google_transit.zip</title>
+<polygon fill="#fff7e6" stroke="black" points="1144.76,-420 987.55,-420 987.55,-384 1144.76,-384 1144.76,-420"/>
+<text xml:space="preserve" text-anchor="middle" x="1066.15" y="-399" font-family="Helvetica,sans-Serif" font-size="10.00">backend/data/google_transit.zip</text>
+</g>
+<!-- GTFS Static Reader&#45;&gt;backend/data/google_transit.zip -->
+<g id="edge20" class="edge">
+<title>GTFS Static Reader-&gt;backend/data/google_transit.zip</title>
+<path fill="none" stroke="black" d="M941.82,-402C952.62,-402 964.28,-402 975.98,-402"/>
+<polygon fill="black" stroke="black" points="975.66,-405.5 985.66,-402 975.66,-398.5 975.66,-405.5"/>
+</g>
+<!-- Google Places API -->
+<g id="node26" class="node">
+<title>Google Places API</title>
+<ellipse fill="#fff2cc" stroke="black" cx="1066.15" cy="-126" rx="60.1" ry="18"/>
+<text xml:space="preserve" text-anchor="middle" x="1066.15" y="-123" font-family="Helvetica,sans-Serif" font-size="10.00">Google Places API</text>
+</g>
+<!-- Google Places Client&#45;&gt;Google Places API -->
+<g id="edge21" class="edge">
+<title>Google Places Client-&gt;Google Places API</title>
+<path fill="none" stroke="black" d="M943.72,-331.19C949.05,-328.28 954.11,-324.91 958.55,-321 1010.69,-275.09 1042.23,-197.28 1056.34,-155.17"/>
+<polygon fill="black" stroke="black" points="1059.65,-156.33 1059.4,-145.73 1052.99,-154.17 1059.65,-156.33"/>
+</g>
+<!-- Google Directions API -->
+<g id="node27" class="node">
+<title>Google Directions API</title>
+<ellipse fill="#fff2cc" stroke="black" cx="1066.15" cy="-72" rx="68.78" ry="18"/>
+<text xml:space="preserve" text-anchor="middle" x="1066.15" y="-69" font-family="Helvetica,sans-Serif" font-size="10.00">Google Directions API</text>
+</g>
+<!-- Google Directions Client&#45;&gt;Google Directions API -->
+<g id="edge22" class="edge">
+<title>Google Directions Client-&gt;Google Directions API</title>
+<path fill="none" stroke="black" d="M949.79,-275.62C953.05,-273.1 956.02,-270.25 958.55,-267 1004.74,-207.59 931.37,-156.8 979.55,-99 984.07,-93.58 989.66,-89.23 995.82,-85.75"/>
+<polygon fill="black" stroke="black" points="996.99,-89.07 1004.51,-81.6 993.97,-82.75 996.99,-89.07"/>
+</g>
+</g>
+</svg>
