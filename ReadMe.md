@@ -18,9 +18,8 @@ ReachHFX provides real-time transit ETAs by ingesting **GTFS-Realtime (protobuf)
 
 ## Architecture
 
-> Paste your architecture diagram image into `docs/` and update the path below.
-
-![ReachHFX Architecture Diagram](docs/reachhfx-architecture.png)
+![ReachHFX Architecture Diagram](docs/ReachHFX_BackEnd.svg)
+![ReachHFX Architecture Diagram](docs/ReachHFX_FrontEnd.svg)
 
 ### High-Level Components
 - **React Native Mobile Client**
@@ -66,13 +65,6 @@ ReachHFX provides real-time transit ETAs by ingesting **GTFS-Realtime (protobuf)
 - Data Model / State Diagram:  
   ![](docs/reachhfx-state-model.png)
 
----
-
-## Screenshots (Optional)
-| Screen | Preview |
-|-------|---------|
-| Home/Search | ![](docs/reachhfx-home.png) |
-| Stop/Arrivals | ![](docs/reachhfx-stop.png) |
 
 ---
 
